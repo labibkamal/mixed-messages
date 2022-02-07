@@ -1,7 +1,9 @@
 function randomNum(num) {
-    return Math.floor(Math.random * num)
+    return Math.floor(Math.random * num - 1) //this function does not work for some reason.
 }
 
+
+console.log(randomNum(3))
 const allWords = {
     every: ['Every '],
     time: ['year ', 'day ', 'night ', 'week ', 'decade ', 'century ', 'hour '],
@@ -13,37 +15,33 @@ const allWords = {
 }
 
 let sentenceArray = []
-
-
+//sentenceArray.push(allWords.time[randomNum(allWords.time.length)])
+//console.log(sentenceArray)
+/*
 function randomMessage() {
-    for (const i in Object.keys(allWords)) {
-        switch (i) {
-            //object keys are not being defined when running code. error: ReferenceError: every is not defined.
-            case allWords.every: sentenceArray.push(randomNum(i.length))
+    for (const key in allWords) {
+        //console.log(key)
+        //sentenceArray.push(key[randomNum(key.length -1)])
+        switch (key) {
+            case key.every: sentenceArray.push(key[randomNum(key.length)])
             break;
-            case allWords.time: sentenceArray.push(randomNum(i.length))
+            case key.time: sentenceArray.push(randomNum(key.length))
             break;
-            case allWords.atLeast: sentenceArray.push(randomNum(i.length))
+            case key.atLeast: sentenceArray.push(randomNum(key.length))
             break;
-            case allWords.number: sentenceArray.push(randomNum(i.length))
+            case key.number: sentenceArray.push(randomNum(key.length))
+            break;
+            case key.noun: sentenceArray.push(randomNum(key.length))
+            break;
+            case key.verb: sentenceArray.push(randomNum(key.length))
+            break;
+            case key.subjects: sentenceArray.push(randomNum(key.length))
             break;
         }
+        console.log(sentenceArray)
     }
-    console.log(sentenceArray)
 }
 
 randomMessage();
-    /*
-    let i = 
-    switch (i in allWords) {
-        case every: sentenceArray.push('Every')
-        break;
-        case time: sentenceArray.push()
-    }
-    
-
-    console.log(sentenceArray)
-}
-*/    
-
-
+  
+*/
