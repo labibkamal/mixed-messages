@@ -18,13 +18,14 @@ let sentenceArray = []
 function randomMessage() {
     for (const i in Object.keys(allWords)) {
         switch (i) {
-            case every: sentenceArray.push(randomNum(i.length))
+            //object keys are not being defined when running code. error: ReferenceError: every is not defined.
+            case allWords.every: sentenceArray.push(randomNum(i.length))
             break;
-            case time: sentenceArray.push(randomNum(i.length))
+            case allWords.time: sentenceArray.push(randomNum(i.length))
             break;
-            case atLeast: sentenceArray.push(randomNum(i.length))
+            case allWords.atLeast: sentenceArray.push(randomNum(i.length))
             break;
-            case number: sentenceArray.push(randomNum(i.length))
+            case allWords.number: sentenceArray.push(randomNum(i.length))
             break;
         }
     }
