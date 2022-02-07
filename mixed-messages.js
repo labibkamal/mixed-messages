@@ -1,9 +1,7 @@
 function randomNum(num) {
-    return Math.floor(Math.random * num - 1) //this function does not work for some reason.
+    return Math.floor(Math.random() * num - 1) 
 }
 
-
-console.log(randomNum(3))
 const allWords = {
     every: ['Every '],
     time: ['year ', 'day ', 'night ', 'week ', 'decade ', 'century ', 'hour '],
@@ -11,12 +9,12 @@ const allWords = {
     number: [5, 100, 6, 69, 4000, 35619],
     noun: ['males ', 'females ', 'Europeans ', 'North Americans ', 'dogs ', 'cats ', 'mosquitoes '],
     verb: ['eats ', 'smooches ', 'fights ', 'sings ', 'cries ', 'goes to ', 'dances to ', 'thinks about '],
-    subjects: ['the Pythogorean Theorem', 'a Banana', 'reason to live', '']
+    subjects: ['the Pythogorean Theorem', 'a Banana', 'reason to live', 'cheeseburger']
 }
 
 let sentenceArray = []
-//sentenceArray.push(allWords.time[randomNum(allWords.time.length)])
-//console.log(sentenceArray)
+sentenceArray.push(allWords.time[randomNum(allWords.time.length)])
+console.log(sentenceArray)
 /*
 function randomMessage() {
     for (const key in allWords) {
