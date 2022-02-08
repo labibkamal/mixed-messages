@@ -8,7 +8,7 @@ const allWords = {
     atLeast: ['at least'],
     number: [5, 100, 6, 69, 4000, 35619],
     noun: ['males', 'females', 'Europeans', 'North Americans', 'dogs', 'cats', 'mosquitoes'],
-    verb: ['eat', 'smooche', 'fight', 'sing to', 'cry to', 'go to', 'dance to', 'think about'],
+    verb: ['eat', 'smooche', 'fight', 'sing to', 'cry to','dance to', 'think about'],
     subjects: ['the Pythogorean Theorem', 'a Banana', 'the reason to live', 'a cheeseburger', 'an emu', 'aliens']
 }
 
