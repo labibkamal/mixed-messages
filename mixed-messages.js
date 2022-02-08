@@ -13,6 +13,15 @@ const allWords = {
 }
 
 function mixedMessages() {
-    console.log(`${allWords.every[randomNum(allWords.every.length)]} ${allWords.time[randomNum(allWords.time.length)]} ${allWords.atLeast[randomNum(allWords.atLeast.length)]} ${allWords.number[randomNum(allWords.number.length)]} ${allWords.noun[randomNum(allWords.noun.length)]} ${allWords.verb[randomNum(allWords.verb.length)]} ${allWords.subjects[randomNum(allWords.subjects.length)]}.`)
+    console.log(`${allWords.every[randomNum(allWords.every.length)]} \
+${allWords.time[randomNum(allWords.time.length)]} \
+${allWords.atLeast[randomNum(allWords.atLeast.length)]} \
+${allWords.number[randomNum(allWords.number.length)]} \
+${allWords.noun[randomNum(allWords.noun.length)]} \
+${allWords.verb[randomNum(allWords.verb.length)]} \
+${allWords.subjects[randomNum(allWords.subjects.length)]}.`)
 }
 mixedMessages();
+/*
+console.log(`${allWords.every[randomNum(allWords.every.length)]} \
+${allWords.time[randomNum(allWords.time.length)]} ${allWords.atLeast[randomNum(allWords.atLeast.length)]} ${allWords.number[randomNum(allWords.number.length)]} ${allWords.noun[randomNum(allWords.noun.length)]} ${allWords.verb[randomNum(allWords.verb.length)]} ${allWords.subjects[randomNum(allWords.subjects.length)]}.`)*/ //this format works
